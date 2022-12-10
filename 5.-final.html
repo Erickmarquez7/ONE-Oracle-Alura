@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+último modulo del primer capitulo primeros pasos
+
+<script>
+    function calculaIMC(peso, altura){
+        indice = peso / (altura * altura)
+        return indice
+    }
+    amix = calculaIMC(60,1.50)
+    otroAmix=calculaIMC(70,1.55)
+    quienSabe=calculaIMC(66,1.40)
+    document.write("<br>")
+    document.write("El indice de masa de mi amix es "+amix)
+    document.write("<br>")
+    document.write("El indice de masa de mi otro amix es "+otroAmix)
+    document.write("<br>")
+    document.write("El indice de masa de quien sabe es "+quienSabe)
+    document.write("<br>")
+    document.write("El promedio de indices es "+((amix+otroAmix+quienSabe)/3))
+    
+</script>
+
+<br>
+Para ingresar datos a través de una ventana emergente se hace con promt()
+<br>
+<script>
+    nombre = prompt("Ingresa nombre")
+    peso = prompt(nombre + ", Ingresa tu peso, por fa que sean numeros xd")
+    altura = prompt(nombre + ", Ahora la altura")
+    document.write("Tu IMC "+nombre+" es "+calculaIMC(peso, altura))
+</script>
