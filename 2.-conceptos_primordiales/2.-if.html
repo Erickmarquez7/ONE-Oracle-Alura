@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+    tieneLicencia = tieneLicencia.toUpperCase();
+
+    if (edad>= 18){
+        if (tieneLicencia == "S"){
+            document.write("Tienes edad y permiso")
+        }else {
+            document.write("Tiene edad pero no permiso")
+        }
+    } else {
+        if (tieneLicencia == "S"){
+            document.write("No tienes edad pero sí permiso xd")
+        }else {
+            document.write("No tienes edad ni permiso. F")
+        }
+    }
+
+
+
+</script>
