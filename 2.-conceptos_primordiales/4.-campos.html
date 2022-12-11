@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+Para agregar campos a la pagina sin que apareza el prompt lo hacemos con la etiqueta input
+<br>
+Y botones con button
+<br>
+Para poner la funcionalidad capturamos los datos de la acción mediante la función document.querySelection pasandole la etiqueta correspondiente
+<br>
+Adivina la contraseña xd
+<input type="text">
+<button>
+    Intentar
+</button>
+<script>
+    var pass = "password"
+    //le pasamos la atiqueta a capturar
+    var input = document.querySelector("input")
+    //para que el cursor se ponga en automatico en el cuadro
+    input.focus()
+
+    //funcion para verificar 
+    function verificar(){
+        //pero debemos extraer su valor
+        if (input.value == pass){
+            alert("Acierto")
+        }else{
+            alert("Nel")
+        }
+
+        //para vaciar el campo
+        input.value = ""
+        //volver a enfocar el cursor
+        input.focus()
+
+    }
+
+    //de nuevo pasamos la etiqueta a capturar
+    var boton = document.querySelector("button")
+    //si es con los parentesis llama a la funcion
+    //sin parentesis guarda el codigo y lo ejecuta cuando demos click
+    boton.onclick = verificar
+</script>
+k loko :0
