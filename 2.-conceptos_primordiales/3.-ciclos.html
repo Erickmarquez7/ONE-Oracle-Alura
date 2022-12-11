@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+
+Si queremos repetir cierto bloque de codigo ponemos ciclos con while o for
+
+<script>
+    var familiares = parseInt(prompt("Ingrese el numero de familiares que tiene"))
+    var contador = 1
+    var suma =0
+    while (contador <= familiares){
+        var edad = parseInt(prompt("Ingresa la edad del familiar"))
+        suma = suma+edad
+        contador += 1
+    }
+    prompt("La suma total es "+suma+". Escriba ok para continuar")   
+    var promedio = suma/(contador-1)
+    document.write("<br>El promedio de edades es "+(promedio))
+</script>
