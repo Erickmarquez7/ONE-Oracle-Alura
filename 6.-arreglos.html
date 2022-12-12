@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+Un arreglo es como un conjunto de distintos tipos variables, por ejemplo
+<br>
+arreglo = ["Hola",777,true]
+<br>
+Rellenamos uno de manera aleatoria
+<script>
+
+    function rellena(cantidad){
+        var arreglo = []
+        for(var i =0; i<cantidad;i++){
+            arreglo.push(Math.round(Math.random()*10))
+        }
+        document.write(arreglo)
+        return arreglo;
+    }
+    var c = 5
+    rellena(c)
+
+    function rellenaSinRepetir(cantidad){
+        var arreglo = [];
+        var contador = 0;        
+        while(contador <cantidad){
+            var aleatorio = Math.round(Math.random()*10)
+            var repetido = false
+
+            
+            //para verificar el repetido
+            for (var pos = 0; pos<arreglo.length;pos++){
+                if(arreglo[pos] == aleatorio){
+                    repetido = true;
+                    break;
+                }
+            }
+            //document.write(contador)
+            //si no se encontraron repetidos entonces agregamos y contamos
+            if(repetido == false){
+                arreglo.push(aleatorio);
+                contador++
+                
+            }
+        }
+        document.write(arreglo)
+        return arreglo;
+    }
+    document.write("<br>")
+    rellenaSinRepetir(6)
+
+</script>
