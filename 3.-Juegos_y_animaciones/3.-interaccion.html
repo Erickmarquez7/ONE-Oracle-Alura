@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<canvas width="600" height="400"></canvas>
+<script>
+    var canva = document.querySelector("canvas");
+    var pincel = canva.getContext("2d");
+
+    pincel.fillStyle="grey";
+    pincel.fillRect(0,0,600,400);
+
+    function alerta(){
+        console.log("Funcion de alerta")
+        alert("Hiciste click en el canva, lol");
+    }
+
+    //el evento es de tipo mouse 
+    function alertaCoor(evento){
+        //las coordenadas son de la pantalla completa
+        var x = evento.pageX;
+        var y = evento.pageY;
+        //queremos solamente del canvas, una resta
+        var canvax = evento.pageX - canva.offsetLeft;
+        var canvay = evento.pageY - canva.offsetTop;
+        
+        alert(canvax + ', '+canvay)
+    }
+
+    function dibujaCirculo(evento){
+        var canvax = evento.pageX - canva.offsetLeft;
+        var canvay = evento.pageY - canva.offsetTop;
+        pincel.fillStyle="green"
+        //para empezar desde ahí
+        //si no ponemos begin entonces rellena el área
+        pincel.beginPath()
+        pincel.arc(canvax, canvay, 10, 0, 2*3.14)
+        pincel.fill()
+    }
+    //para click izq
+    canva.onclick = dibujaCirculo
+    //para click der
+    canva.oncontextmenu = alertaCoor
+</script>
