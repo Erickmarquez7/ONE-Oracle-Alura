@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    //conectamos la etiqueta
+    var pantalla = document.querySelector("canvas");
+    //obtenemos el pincel xd
+    var pincel = pantalla.getContext("2d");
+    //cambiamos la propiedad 
+    pincel.fillStyle="lightgray";
+    //Coloreamos los pixeles, un cuado de 15 pixeles 0:
+    pincel.fillRect(0,0,600,400);
+
+    //realizamos un borde
+    pincel.strokeRect(0,0,600,400)
+    
+    //vamos hacer cudadraditos xd
+
+    function dibujar(color, altura){
+        pincel.fillStyle=color;
+        var contador = 0;
+        while (contador < 600){
+            pincel.fillRect(contador, altura, 50, 50);
+            pincel.strokeRect(contador,altura,50,50)
+            contador = contador+50;
+        }
+
+    }
+    dibujar("yellow",0);
+    dibujar("green",50);
+    dibujar("red",150)
+
+    
+</script>
+<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Documentación</a>
