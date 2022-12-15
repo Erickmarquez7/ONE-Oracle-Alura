@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var lapiz = pantalla.getContext("2d");
+    lapiz.fillStyle="lightgrey";
+    lapiz.fillRect(0,0,600,400);
+
+    var radio =10;
+    
+    function hacerCirculo(x,y,radio,color){
+        lapiz.fillStyle=color;
+        lapiz.beginPath();
+        lapiz.arc(x,y,radio, 0,2*Math.PI);
+        lapiz.fill();
+    }    
+
+    function hacerDiana(x,y){
+        hacerCirculo(x,y,radio+20, "red");
+        hacerCirculo(x,y,radio+10, "white");
+        hacerCirculo(x,y,radio, "red");
+
+    }
+
+    function posAleatoria(maximo){
+        return Math.floor(Math.random()*maximo);
+    }
+
+    var x = 0;
+    var y =0;
+
+    function actualizaPantalla(){
+        lapiz.clearRect(0,0,600,400);
+        lapiz.fillStyle="lightgrey";
+        
+        lapiz.fillRect(0,0,600,400);
+        
+        x = posAleatoria(600);
+        y = posAleatoria(400);
+
+        hacerDiana(x,y)
+    }
+    
+    function dispara(evento){
+        var canvax = evento.pageX - pantalla.offsetLeft;
+        var canvay = evento.pageY - pantalla.offsetTop;
+
+        if ( (canvax < x+radio) && (canvax > x-radio)
+             && (canvay <y +radio) && (canvay>y-radio ) ){
+            alert("Acertaste")
+                
+        }
+    }
+
+    pantalla.onclick=dispara;
+
+    setInterval(actualizaPantalla,1000);
+
+</script>
