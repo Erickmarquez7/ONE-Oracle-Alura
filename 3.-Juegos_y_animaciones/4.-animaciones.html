@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+mas canvas
+<br>
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var lapiz = pantalla.getContext("2d");
+    lapiz.fillStyle="lightgrey";
+    lapiz.fillRect(0,0,600,400);
+
+    function hacerCirculo(x,y,radio){
+        lapiz.fillStyle="blue";
+        lapiz.beginPath();
+        lapiz.arc(x,y,radio, 0,2*Math.PI);
+        lapiz.fill();
+    }
+
+    //llama a la funcion cada milseg de tiempo, para que sea al segundo es 1000
+    //setInterval(funcion, milseg)
+    var x = 0;
+
+    //cuando es false es pk es menos de 600 y c mueve a la der
+    //si es true se mueve a la izquiera
+    var bandera = false;
+
+    function actualizaPantalla(){
+        //para limpiar el cuadro xd
+        lapiz.clearRect(0,0,600,400);
+
+        console.log(x);
+        if (!bandera){
+            hacerCirculo(x,10,10);
+            x++;
+            if(x==600){
+                bandera=true;
+            }
+        }else{
+            hacerCirculo(x,10,10);
+            x--;
+            if(x==0){
+                bandera=false;
+            }
+        }
+    }
+
+    setInterval(actualizaPantalla, 10);
+
+</script>
+<br>
+que divertido xd
