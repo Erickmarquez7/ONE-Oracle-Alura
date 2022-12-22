@@ -3,7 +3,9 @@ body{
     background-color: #cccccc;
 }
 
-
+.titulo{
+    text-align: center;
+}
 /* Para todas las etiquetas p será así */
 p{
     text-align: center;
@@ -21,18 +23,33 @@ em strong{
     color: cadetblue;
 }
 
-h3{
-    text-align: center;
-}
 
 .diferencia{
     background-color: white;
-    
+
 }
 
+ul{
+    /* Por si solo los elementos ocupan toda la linea
+    Con inline-block decimos que se ajuste y no ocupe toda la linea */
+    display: inline-block;
+    /* Así ya queda la imagen al lado izquierdo */
+
+    /* Para que se aline arriba, junto con el texto */
+    vertical-align: top;
+
+    /* Pa que se vaya a la derecha xd */
+    width: 40%;
+
+    margin-right: 8%;
+}
 
 .items{
     font-style: italic;
+}
+
+#imagenDiff{
+    width: 30%;
 }
 
 #pie{
