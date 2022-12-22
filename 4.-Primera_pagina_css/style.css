@@ -3,18 +3,26 @@ body{
     background-color: #cccccc;
 }
 
+
 /* Para todas las etiquetas p será así */
 p{
     text-align: center;
     /* background-color: #cccccc; */
 }
 
+#banner{
+    width: 100%;
+}
+
 /* strong aplicaría a todas las que son strong
 em stron aplica solo a la que está identada con em strong
 em aplica a todo lo que está dentro, incluyendo el strong */
-
 em strong{
     color: cadetblue;
+}
+
+.items{
+    font-style: italic;
 }
 
 #pie{
