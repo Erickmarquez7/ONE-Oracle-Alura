@@ -21,6 +21,16 @@ em strong{
     color: cadetblue;
 }
 
+h3{
+    text-align: center;
+}
+
+.diferencia{
+    background-color: white;
+    
+}
+
+
 .items{
     font-style: italic;
 }

@@ -18,21 +18,29 @@
 
     <!-- Etiquetas de contenido -->
     <body> 
-        <!-- para alinear, el punto y coma es por si queremos agregar mas -->
+
+        <!-- Si queremos dividir nuestro codigo en bloques utilizamos div
+        Para organizar-->
+    <div>
+            <!-- para alinear, el punto y coma es por si queremos agregar mas -->
         <h1 style="text-align: center; background-color: #cccccc; color:black">Acerca de Indie Catalogue</h1>
 
         <!-- Imagenes con la etiqueta img -->
         <img id="banner" src="img/banner.jpg">
+    </div> 
 
-
+    <div>
         <p> <strong>Catalogo online</strong> donde puedes ver los mejores temas de tus 
         artistas indies favoritos.</p>
 
         <p>Nuestro objetivo es hacer llegar la música a más escuchas y poder disfrutar
         de los mejores exitos.</p>
+    </div>
 
+    <div class="diferencia">
         <h3>Lo que nos diferencia</h3>
-        <!-- Para listas con la etiqueta ul -->
+        <!-- Para listas con la etiqueta ul, de unsorted list.
+        Para listas ordenadas es con ol-->
         <ul>   
             <!-- También podemos agruparlos por clases en lugar de ids, se hace la referencia con un punto en el css-->
             <li class="items">Atención personalizada</li>
@@ -41,11 +49,17 @@
             <li class="items">Los mejores temazos</li>
         </ul>
 
+        <img src="img/pp.jpg">
+    </div>
+
+    <div>
         <!-- Las etiquetas internas heredan el comportamiento de las externas, tipo árbol -->
         <p style="font-size:20px"> <em> Gracias por apoyar el proyecto, ¡muy pronto daremos <strong>grandes sorpresas!</strong> </em></p>
 
         <!-- Para poder seleccionar uno en especifico lo hacemos con un id, y # en el css-->
         <p id="pie">Creada por Erick B. Márquez</p>
+    </div>
+
     </body>
 
-</html></body> 
+</html>
