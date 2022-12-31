@@ -37,3 +37,34 @@ nav li{
     /* para mergen interno */
     margin: 0 0 0 15px 
 }
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    /* Espaciamiento entre el header y main */
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    /* Ocupa el 30 por ciento del espacio */
+    width: 30%;
+    /* Que sea en la parte superior */
+    vertical-align: top;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
