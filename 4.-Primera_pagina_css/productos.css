@@ -1,0 +1,39 @@
+header{
+    background-color: #cccccc;
+    padding: 25px;
+}
+
+#letras{
+    width: 30%;
+    margin: 35px 35px 35px 35px;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    /* para la posición, en este caso será absoluta */
+    position: absolute;
+    top: 65px;
+    right: 50px;
+}
+
+nav a{
+    /* Para que sean mayusculas */
+    text-transform: uppercase;
+    color: black;
+    /* font-weight: bold; */
+    font-size: 20px;
+    /* pa que no tenga decorado */
+    text-decoration: none;
+}
+
+nav li{
+    /* cada item ocupa todo el renglon, para cambiarlo ponemo inline */
+    display: inline;
+    /* para mergen interno */
+    margin: 0 0 0 15px 
+}
