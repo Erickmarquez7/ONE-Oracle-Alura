@@ -38,8 +38,13 @@ nav li{
     margin: 0 0 0 15px 
 }
 
+.imagenes-productos{
+    width: 100%;
+    margin-top: 15px;
+}
+
 .productos{
-    width: 940px;
+    width: 950px;
     margin: 0 auto;
     /* Espaciamiento entre el header y main */
     padding: 50px;
@@ -48,10 +53,16 @@ nav li{
 .productos li{
     display: inline-block;
     text-align: center;
-    /* Ocupa el 30 por ciento del espacio */
     width: 30%;
+    /* Ocupa el 30 por ciento del espacio */
     /* Que sea en la parte superior */
     vertical-align: top;
+    /* para guiarnos un poco en cada imagen */
+    /* background-color: #cccccc; */
+
+    margin: 0 1.2%;
+    padding: 30px 20px;
+    box-sizing: border-box;
 }
 
 .productos h2{
@@ -61,6 +72,7 @@ nav li{
 
 .producto-descripcion{
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .producto-precio{
