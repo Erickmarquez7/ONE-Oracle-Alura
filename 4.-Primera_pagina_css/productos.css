@@ -31,6 +31,13 @@ nav a{
     text-decoration: none;
 }
 
+/* captura el movimiento del mouse */
+nav a:hover{
+    color: #c78c19;
+    text-decoration:underline;
+    
+}
+
 nav li{
     /* cada item ocupa todo el renglon, para cambiarlo ponemo inline */
     display: inline;
@@ -63,11 +70,47 @@ nav li{
     margin: 0 1.2%;
     padding: 30px 20px;
     box-sizing: border-box;
+
+    /* Para declarar el borde */
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+
+    /* o bien */
+    /* border: 2px solid #000000; */
+
+
+    /* Para el radio de las esquinas del borde */
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 45px; */
+
+    /* o bien todo en uno xd en orden de las manecillas del reloj */
+        /* border-radius: 10px 15px 25px 45px; */
+
+    border-radius: 15px;
+}
+
+/* para capturar el movimiento del mouse */
+.productos li:hover{
+    border-color: #c78c19;
+    /* font-size: ; */
+}
+
+/* para capturar el click del mouse */
+.productos li:active{
+    border-color: rgba(6, 94, 235, 0.908);
 }
 
 .productos h2{
     font-size: 30px;
     font-weight: bold;
+}
+
+/* para producir el efecto de aumento de texto del titulo*/
+.productos li:hover h2{
+    font-size: 33px;
 }
 
 .producto-descripcion{
