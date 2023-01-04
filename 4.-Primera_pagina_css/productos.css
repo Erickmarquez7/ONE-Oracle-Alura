@@ -123,3 +123,10 @@ nav li{
     font-weight: bold;
     margin-top: 10px;
 }
+
+footer{
+    background-color: #cccccc;
+    text-align: center;   
+    padding: 15px;
+}
+
