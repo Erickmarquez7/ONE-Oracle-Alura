@@ -32,6 +32,7 @@
                 <!-- Etiqueta label con for para saber a que entrada pertenece
                 los conecta -->
                 <!-- Así al hacer click se pone en automatico al cuadrado -->
+                <!-- Entradas de tipo texto -->
                 <label for="nombreapellido">Nombre y apellido</label>
                 <input type="text" id="nombreapellido">
 
@@ -40,6 +41,30 @@
 
                 <label for="telefono">Telefono</label>
                 <input type="text" id="telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="50" rows="5" id="mensaje"></textarea>
+
+                <div>
+                <p>¿Cómo le gustaría ser contactado</p>
+                <!-- Entrada de tipo elegir circulo xd -->
+                <!-- Uno por cada selección -->
+                <!-- name para que solo permita seleccionar uno, pk pertenecen al mismo grupo -->
+                <label for="radio-email">Email</label>
+                <input type="radio" name="contacto" value="email" id="radio-email">
+
+                <label for="radio-telefono">Telefono</label>
+                <input type="radio" name="contacto" value="telefono" id="radio-telefono">
+
+
+                <label for="radio-wasap">Whatsapp</label>
+                <input type="radio" name="contacto" value="wasap" id="radio-wasap">
+                </div>
+
+                <!-- otra manera de conectar las etiquetas con el input -->
+                <label><input type="checkbox">¿Recibir ofertas por correo?</label>
+                
+
 
                 <!-- El boton de enviar xd -->
                 <input type="submit" value="Enviar">
