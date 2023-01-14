@@ -142,14 +142,38 @@ form{
     /* display: block; */
 }
 
-form label{
+form label, form p{
     display: block;
     font-size: 20px;
     margin: 0 0 5px;
 }
 
 form input{
-    display: block;
+    display: inline-block;
     margin: 0 0 20px;
     padding: 10px 20px;
 }
+
+.input-padron{
+    display: block;
+    margin : 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#check-box{
+    margin: 15px 0px;
+}
+/* Breviario cultural xd */
+/* La jerarquia de css es mediante peso, en primer lugar tenemos el estilo 
+inline el cual se define directamente en el html
+En segundo lugar están los id
+Seguido de las clases y por ultimo
+las etiquetas normales */
+/* Entonces si tenemos algo del estilo
+p{} tiene un peso de 1
+pero si tenemos por ejemplo
+div label p{} tendrá un peso de 3 y le dará prioridad a este*/
+/* Si tenemos
+p{} y .texto que referencian al mis parrafo entonces le hará caso a 
+.texto ya que tiene una mayor prioridad*/

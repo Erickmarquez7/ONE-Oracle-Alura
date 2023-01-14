@@ -34,35 +34,52 @@
                 <!-- Así al hacer click se pone en automatico al cuadrado -->
                 <!-- Entradas de tipo texto -->
                 <label for="nombreapellido">Nombre y apellido</label>
-                <input type="text" id="nombreapellido">
+                <input type="text" id="nombreapellido" class="input-padron">
 
                 <label for="correo">Correo</label>
-                <input type="text" id="correo">
+                <input type="text" id="correo" class="input-padron">
 
                 <label for="telefono">Telefono</label>
-                <input type="text" id="telefono">
+                <input type="text" id="telefono" class="input-padron">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea cols="50" rows="5" id="mensaje"></textarea>
+                <textarea cols="50" rows="5" id="mensaje" class="input-padron"></textarea>
 
                 <div>
-                <p>¿Cómo le gustaría ser contactado</p>
+                <p>¿Cómo le gustaría ser contactado?</p>
                 <!-- Entrada de tipo elegir circulo xd -->
                 <!-- Uno por cada selección -->
                 <!-- name para que solo permita seleccionar uno, pk pertenecen al mismo grupo -->
-                <label for="radio-email">Email</label>
-                <input type="radio" name="contacto" value="email" id="radio-email">
 
-                <label for="radio-telefono">Telefono</label>
-                <input type="radio" name="contacto" value="telefono" id="radio-telefono">
+                <!-- <label for="radio-email">Email</label>
+                <input type="radio" name="contacto" value="email" id="radio-email"> -->
+                
+                <!-- Ponemos el input dentro del label para que se acomode mejor -->
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> Email</label>
+                
 
+                <!-- <label for="radio-telefono">Telefono</label>
+                <input type="radio" name="contacto" value="telefono" id="radio-telefono"> -->
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono"> Telefono</label>
+                
 
-                <label for="radio-wasap">Whatsapp</label>
-                <input type="radio" name="contacto" value="wasap" id="radio-wasap">
+                <!-- <label for="radio-wasap">Whatsapp</label>
+                <input type="radio" name="contacto" value="wasap" id="radio-wasap"> -->
+                <label for="radio-wasap"><input type="radio" name="contacto" value="wasap" id="radio-wasap"> Whatsapp</label>
+                </div> 
+
+                <div>
+                    <p>Horario de preferencia</p>
+                    <!-- Para seleccionar en cajita -->
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
                 </div>
 
                 <!-- otra manera de conectar las etiquetas con el input -->
-                <label><input type="checkbox">¿Recibir ofertas por correo?</label>
+                <label><input type="checkbox" id="check-box"> ¿Recibir ofertas por correo?</label>
                 
 
 
