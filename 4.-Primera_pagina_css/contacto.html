@@ -16,7 +16,7 @@
         <header>
         <!-- div para encapsular la imagen y letras para un mejor formato -->
         <div class="caja">
-            <h1><img id="letras" src="img/indie.png"></h1>
+            <h1><img id="letras" src="img/indie.png" alt="letras indie"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -33,20 +33,27 @@
                 los conecta -->
                 <!-- Así al hacer click se pone en automatico al cuadrado -->
                 <!-- Entradas de tipo texto -->
+                <!-- required es una etiqueta para que el campo sea requerido -->
                 <label for="nombreapellido">Nombre y apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron">
+                <input type="text" id="nombreapellido" class="input-padron" required>
 
+                <!-- placeholder es un texto para guiar al usuario -->
                 <label for="correo">Correo</label>
-                <input type="text" id="correo" class="input-padron">
+                <input type="email" id="correo" class="input-padron" required placeholder="ejemplo@dominio.com">
 
                 <label for="telefono">Telefono</label>
-                <input type="text" id="telefono" class="input-padron">
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX-XXXX">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea cols="50" rows="5" id="mensaje" class="input-padron"></textarea>
+                <textarea cols="50" rows="5" id="mensaje" class="input-padron" required></textarea>
 
-                <div>
-                <p>¿Cómo le gustaría ser contactado?</p>
+                <!-- <div> 
+                    fieldset es pa indicarle que estos datos hacen referencia a lo mismo-->
+                <fieldset>
+                <!-- en este caso en lugar de usar la p usamos legend -->
+                <!-- <p>¿Cómo le gustaría ser contactado?</p> -->
+                <legend>¿Cómo le gustaría ser contactado?</legend>
+
                 <!-- Entrada de tipo elegir circulo xd -->
                 <!-- Uno por cada selección -->
                 <!-- name para que solo permita seleccionar uno, pk pertenecen al mismo grupo -->
@@ -65,27 +72,61 @@
 
                 <!-- <label for="radio-wasap">Whatsapp</label>
                 <input type="radio" name="contacto" value="wasap" id="radio-wasap"> -->
-                <label for="radio-wasap"><input type="radio" name="contacto" value="wasap" id="radio-wasap"> Whatsapp</label>
-                </div> 
+                <label for="radio-wasap"><input type="radio" name="contacto" value="wasap" id="radio-wasap" checked> Whatsapp</label>
+                <!-- checked para que por defecto esté puesto -->
+                </fieldset>
+                <!-- </div>  -->
 
-                <div>
-                    <p>Horario de preferencia</p>
+                <fieldset>
+                <!-- <div> -->
+                    <!-- <p>Horario de preferencia</p> -->
+                    <legend>Horario de preferencia</legend>
                     <!-- Para seleccionar en cajita -->
                     <select>
                         <option>Mañana</option>
                         <option>Tarde</option>
                         <option>Noche</option>
                     </select>
-                </div>
+                <!-- </div> -->
+                </fieldset>
 
                 <!-- otra manera de conectar las etiquetas con el input -->
-                <label><input type="checkbox" id="check-box"> ¿Recibir ofertas por correo?</label>
+                <label><input type="checkbox" id="check-box" checked>  ¿Recibir ofertas por correo?</label>
                 
 
 
                 <!-- El boton de enviar xd -->
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="enviar">
             </form>
+            
+            <table>
+                <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>9:00h ~ 19:00h</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>9:00h ~ 19:00h</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>9:00h ~ 19:00h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>9:00h ~ 21:00h</td>
+                </tr>
+                </tbody>
+            </table>
+
         </main>
 
 

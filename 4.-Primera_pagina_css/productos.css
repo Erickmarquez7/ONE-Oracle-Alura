@@ -142,7 +142,7 @@ form{
     /* display: block; */
 }
 
-form label, form p{
+form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 5px;
@@ -163,6 +163,47 @@ form input{
 
 #check-box{
     margin: 15px 0px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #c78c19;
+    border-radius: 5px;
+    border:none; 
+    /* para cambiar la figura del cursor */
+    cursor: pointer;
+    /* Para la transición de color en el hover */
+    transition: 1s all;
+}
+
+.enviar:hover{
+    background:#9e6f11;
+    /* Para que se aumente todo jsjs y no como en titulo de los productos */
+    transform: scale(1.06);
+    /* transform: rotate(70deg); */
+    /* transform: scale(1.06) rotate(70deg); para que haga ambas */
+
+}
+
+table{
+
+    margin: 40px 265px;
+}
+
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, thead{
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
 /* Breviario cultural xd */
 /* La jerarquia de css es mediante peso, en primer lugar tenemos el estilo 
