@@ -218,3 +218,31 @@ div label p{} tendrá un peso de 3 y le dará prioridad a este*/
 /* Si tenemos
 p{} y .texto que referencian al mis parrafo entonces le hará caso a 
 .texto ya que tiene una mayor prioridad*/
+
+/* css para index */
+.banner{
+    width: 100%;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0 1em;
+}
+
+/* por jerarquia */
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.imagen-diff{
+    width: 40%;
+}
