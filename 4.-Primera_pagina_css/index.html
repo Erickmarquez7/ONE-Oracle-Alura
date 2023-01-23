@@ -13,7 +13,9 @@
         <!-- Para referenciar  -->
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="productos.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
 
 
@@ -35,24 +37,27 @@
         </div>        
     </header>
 
-    <!-- Si queremos dividir nuestro codigo en bloques utilizamos div
-    Para organizar-->
-    <div>
         <!-- Imagenes con la etiqueta img -->
         <img class="banner" src="img/banner.jpg">
-
-    </div> 
 
     <main>
 
         <section class="principal">
             <!-- para alinear, el punto y coma es por si queremos agregar mas -->
-            <h2 class = "titulo" background-color: #cccccc; color:black>Acerca de Indie Catalogue</h2>
+            <h2 class = "titulo">Acerca de Indie Catalogue</h2>
+            
+            <img class="discos" alt = "imagen de discos" src="img/Discos.jpg">
 
             <p> <strong>Catalogo online</strong> donde puedes ver los mejores temas de tus 
             artistas indies favoritos.</p>
 
             <p>Nuestro objetivo es hacer llegar la <em>música</em> a más escuchas y poder disfrutar de los mejores exitos.</p>
+        </section>
+
+        <section class="mapa">
+            <h3 class="titulo">Nuestra ubicación</h3>
+            <p>Nuestro establecimiento está ubicado en tu corazón uwu</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30120.766803819653!2d-99.20266805264109!3d19.32164661462016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce000920979a1b%3A0x7c9f3c0207ba804d!2sC.U.%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1674179643873!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section class="diferencia">
@@ -70,6 +75,14 @@
             <img src="img/pp.jpg" class="imagen-diff">
         </section>
 
+        <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KloTVD2X3Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        
+
+        <!-- Si queremos dividir nuestro codigo en bloques utilizamos div
+        Para organizar-->
         <div>
             <!-- Las etiquetas internas heredan el comportamiento de las externas, tipo árbol -->
             <p style="font-size:20px"> <em> Gracias por apoyar el proyecto, ¡muy pronto daremos <strong>grandes sorpresas!</strong> </em></p>
@@ -78,6 +91,7 @@
             <p id="pie">Creada por Erick B. Márquez</p>
         </div>
 
+        
     </main>
 
     <!-- Etiqueta para el pie de pagina -->
