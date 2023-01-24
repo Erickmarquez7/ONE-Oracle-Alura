@@ -6,3 +6,4 @@ Pagina para probar etiquetas: https://www.w3schools.com/css/tryit.asp?filename=t
 
 tipografias: google fonts. Copiamos el link en la parte del head y el css en body{} 
 
+Para jugar con las sombras: box shadow generator mozila

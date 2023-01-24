@@ -295,6 +295,15 @@ p{} y .texto que referencian al mis parrafo entonces le hará caso a
 
 .imagen-diff{
     width: 40%;
+    /* Opacidad se refiere a la capacidad de que tanto deja pasar la luz */
+    transition: 400ms;
+    /* Sombras, 3 paramteros: eje x, eje y, y color */
+    /* Sombras, 4 paramteros: eje x, eje y, difuminación y color */
+    box-shadow: 10px 10px 30px black;
+}
+
+.imagen-diff:hover{
+    opacity: 0.5;
 }
 
 .lista-diff{
