@@ -134,11 +134,13 @@ footer{
     text-align: center;   
     padding: 15px;
 }
-/* 
-main{
+ 
+/* Si lo comentamos entonces abarcamos toda la pagina
+Tons es pa limitar de algun modo los limites xd */
+/* main{
     width: 940px;
     margin: 0 auto;
-} */
+}  */
 
 form{
     width: 940px;
@@ -236,7 +238,12 @@ p{} y .texto que referencian al mis parrafo entonces le hará caso a
 }
 
 .principal{
+    padding: 3em 0; 
+    background: #FEFEFE;
     text-align: center;
+    /* with para saber maso cuanto espacio a los laterales ocupa */
+    width: 940px;
+    margin: 0 auto;
 }
 
 /* por jerarquia */
@@ -260,6 +267,9 @@ p{} y .texto que referencian al mis parrafo entonces le hará caso a
 
 .mapa{
     padding: 3em 0;
+    /* para degradados con linear-gradient, k lokote */
+    /* background: linear-gradient(45deg, red, blue, yellow); */
+    background: linear-gradient(#FEFEFE, #888888) ;
 }
 
 .mapa p{
@@ -267,8 +277,44 @@ p{} y .texto que referencian al mis parrafo entonces le hará caso a
     text-align: center;
 }
 
+.contenido-mapa{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferencia{
+    padding: 2em 0;
+    background: #888888;
+
+}
+
+.contenido-diff{
+    width: 640px;
+    margin: 0 auto;
+}
+
 .imagen-diff{
     width: 40%;
+}
+
+.lista-diff{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* pseudo elemento */
+.items:before{
+    content: "✯ ";
+}
+
+.items{
+    line-height: 1.5;
+}
+
+/* Pseudo clases :0*/
+.items:first-child{
+    font-weight: bold;
 }
 
 .video{
